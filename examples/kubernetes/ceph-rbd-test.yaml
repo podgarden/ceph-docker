@@ -17,8 +17,7 @@ spec:
   - name: cephrbd
     rbd:
       monitors:
-#This only works if you have skyDNS resolveable from the kubernetes node. Otherwise you must manually put in one or more mon pod ips.
-      - ceph-mon.ceph:6789
+      - 18.16.44.2:6789
       user: admin
       image: ceph-rbd-test
       pool: rbd
