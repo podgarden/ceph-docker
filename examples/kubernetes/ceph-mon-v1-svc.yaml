@@ -13,7 +13,7 @@ spec:
   - port: 6789
     protocol: TCP
     targetPort: 6789
-    nodePort: 36789
+    nodePort: 30789
   selector:
     app: ceph
     daemon: mon
