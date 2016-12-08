@@ -8,10 +8,12 @@ metadata:
     app: ceph
     daemon: mon
 spec:
+  type: NodePort
   ports:
   - port: 6789
     protocol: TCP
     targetPort: 6789
+    nodePort: 36789
   selector:
     app: ceph
     daemon: mon
